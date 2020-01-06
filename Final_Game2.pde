@@ -24,6 +24,7 @@ AudioSample evo;
 AudioSample hit;
 AudioSample wall;
 
+
 void setup() {
   size(displayWidth, 800);
   minim = new Minim(this);
@@ -69,6 +70,7 @@ void draw() {
   }
     
     
+    
     //waterGun  
     W.active=false;
     W.display();
@@ -112,6 +114,7 @@ void draw() {
         }
     }
   
+  
     //haunted show up
     for (int i = enemies2.size()-1; i>=0; i--){
         enemy2 e = enemies2.get(i);
@@ -153,6 +156,7 @@ void draw() {
            level++;
         }
     }
+
 
      //show mudkip in first layer
      if(level==35){
